@@ -7,9 +7,11 @@
     <title>Homebase</title>
 </head>
 <body onload="MyApp()">
+    
     <h2>Homebase App</h2>
     <button id="btn">button</button>
     <button onclick="handleSubmit()">Submit</button>
+    
 </body>
 <script>
     console.log("hello world");
@@ -18,14 +20,14 @@
         const button = document.getElementById("btn");
 
         button.addEventListener('click', logAction);
-    }
-
+    };
+    
     function logAction(){
         console.log("this button clicked");
-    }
-
+    };
+    
     function handleSubmit(){
         console.log("submit click");
-    }
+    };
 </script>
 </html>
