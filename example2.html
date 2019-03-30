@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API</title>
+</head>
+<body>
+    <button onclick="clickAction()">Click me</button>
+    <p id="displayText"></p>
+</body>
+
+<script>
+function clickAction() {
+//console.log("I am clicked");
+// document.getElementById("displayText").innerHTML = "I am clicked";
+    const text = document.getElementById("displayText");
+    console.log(text.innerHTML);
+   
+    if (text.innerHTML == ""){
+        text.innerHTML = "I am clicked"; 
+    }else{
+        text.innerHTML = "";
+    }
+}
+</script>
+</html>
